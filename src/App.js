@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 import Main from "./components/Main";
 import Search from "./components/Search";
 import Forecasts from "./components/Forecasts";
@@ -6,12 +8,15 @@ import Footer from "./components/Footer";
 
 const App = () => {
 
-  return (
-    <main className="relative w-full h-screen flex font-body">
+  const [searchOpen, setSearchOpen] = useState(false);
+  const toggleSearch = () => setSearchOpen(!searchOpen);
 
-      <section className="fixed top-0 left-0 bottom-0 w-96 bg-cards-500">
-        <Search />
-        <Main />
+  return (
+    <main className="w-full h-screen flex font-body">
+
+      <section className="relative">
+        <Search toggleSearch={toggleSearch} searchOpen={searchOpen}/>
+        <Main toggleSearch={toggleSearch} />
       </section>
 
       <section className="flex-1 bg-main-500 flex flex-col justify-between px-36 ml-96">

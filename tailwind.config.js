@@ -68,7 +68,9 @@ module.exports = {
         button: {
           "celcius": "#110E3C",
           "faren": "#585676",
-        }
+          "search": "#3C47E9",
+        },
+
       },
 
       fontFamily: {

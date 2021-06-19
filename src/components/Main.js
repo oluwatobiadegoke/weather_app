@@ -1,11 +1,11 @@
 import { MdGpsFixed, MdLocationOn } from "react-icons/md";
 
-const Main = () => {
+const Main = ({toggleSearch}) => {
     return (
-        <div className="p-11 ">
+        <div className="p-11 fixed top-0 left-0 bottom-0 w-96 bg-cards-500">
 
             <div className="flex justify-between">
-                <button className="shadow bg-utils-500 h-10 w-40 text-text-500">
+                <button className="shadow bg-utils-500 h-10 w-40 text-text-500" onClick={toggleSearch}>
                     Search for places
                 </button>
                 <button className="shadow bg-utils-500 h-10 w-10 rounded-full flex items-center justify-center">

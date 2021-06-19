@@ -11,3 +11,31 @@
 .tempbutton {
   @apply h-10 w-10 rounded-full flex items-center justify-center font-bold;
 }
+
+.searchborder {
+  border: 1px solid #6e707a;
+}
+
+.locationbutton {
+  border: none;
+}
+
+.locationbutton:hover {
+  border: 1px solid #6e707a;
+}
+
+.locationsearchbtn {
+  @apply group flex justify-between items-center px-3 h-16;
+}
+
+.locationicon {
+  @apply text-utils-500 opacity-0 group-hover:opacity-100;
+}
+
+.searchOn {
+  @apply p-6 fixed top-0 left-0 bottom-0 z-20 w-96 bg-cards-500 transition-all duration-500;
+}
+
+.searchOff {
+  @apply p-6 fixed top-0 -left-full bottom-0 z-20 w-96 bg-cards-500 transition-all duration-500;
+}
