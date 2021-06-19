@@ -52,11 +52,32 @@ module.exports = {
           800: "#665e28",
           900: "#332f14"
         },
+
+        text: {
+          100: "#fafafb",
+          200: "#f5f5f7",
+          300: "#f1f1f3",
+          400: "#ececef",
+          500: "#e7e7eb",
+          600: "#b9b9bc",
+          700: "#8b8b8d",
+          800: "#5c5c5e",
+          900: "#2e2e2f"
+        },
+
+        button: {
+          "celcius": "#110E3C",
+          "faren": "#585676",
+        }
       },
 
       fontFamily: {
         body: ['Raleway'],
-      }
+      },
+
+      backgroundImage: theme => ({
+        "cloud": "url('./images/Cloud-background.png')",
+      })
     },
     variants: {
       extend: {},
