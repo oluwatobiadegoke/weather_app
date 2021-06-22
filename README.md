@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+<h1 align="center">Weather App</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+   Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
+</div>
 
-## Available Scripts
+<div align="center">
+  <h3>
+    <a href="https://tessweatherapp.netlify.app">
+      Demo
+    </a>
+    <span> | </span>
+    <a href="https://tessweather.netlify.app">
+      Solution
+    </a>
+    <span> | </span>
+    <a href="https://devchallenges.io/challenges/mM1UIenRhK808W8qmLWv">
+      Challenge
+    </a>
+  </h3>
+</div>
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+- [Overview](#overview)
+- [Built With](#built-with)
+- [Features](#features)
+- [How to use](#how-to-use)
+- [Contact](#contact)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Overview
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
 
-### `npm test`
+### Built With
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [React](https://reactjs.org/)
+- [Tailwind](https://tailwindcss.com/)
+- [MetaWeather API](https://www.metaweather.com/api/)
 
-### `npm run build`
+## Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. Upon visiting the app, the default weather of the default location, which is set to London, is loaded on screen. Users can click on the "search for places" button on the top left of the screen to search for the weather of their preffered location. On PC, the users, by clicking on the round button beside the "search for places" button, can, by their choice, get the weather of their current location or that of a location near it.
+The default measuring scale is in Celcius. If the user has a prefference for using the Farenheit temperature scale, he/she can click on the button "F" button on the top right of the screen and the measurements will be made to display in Farenheit. The same goes for Celcius.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## How To Use
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
-### `npm run eject`
+```bash
+# Clone this repository
+$ git clone https://github.com/oluwatobiadegoke/weather_app
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Install dependencies
+$ npm install
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Run the app
+$ npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Contact
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- GitHub [@your-username](https://{github.com/oluwatobiadegoke})
+- Twitter [@your-twitter](https://{twitter.com/iam_ibot})
