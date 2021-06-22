@@ -10,7 +10,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://teeweather.netlify.app">
+    <a href="https://teeweatherapp.netlify.app/">
       Solution
     </a>
     <span> | </span>
