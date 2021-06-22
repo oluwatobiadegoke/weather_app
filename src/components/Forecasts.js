@@ -6,17 +6,17 @@ const Forecasts = () => {
     const { forecasts, setFaren, faren } = useContext(AppContext);
 
     return (
-        <div className="mb-8">
+        <div className="mb-8 px-12 lg:px-0">
             <div>
                 <div className="flex justify-end py-5">
                     <button onClick={() => setFaren(false)} className="tempbutton bg-white text-button-celcius mr-3">
                         &deg;C
-                    </button>
+                    </button> 
                     <button onClick={() => setFaren(true)} className=" tempbutton bg-button-faren text-text-500 ">
                         &deg;F
                     </button>
                 </div>
-                <div className="grid grid-cols-5 gap-6 text-text-500">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 text-text-500">
                     {
                         forecasts.map((forecast, index) => {
                             const { max_temp, min_temp, weather_state_abbr, weather_state_name, applicable_date } = forecast;

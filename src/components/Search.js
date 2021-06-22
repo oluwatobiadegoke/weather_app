@@ -1,4 +1,4 @@
-import { useContext, useRef } from 'react';
+import { useContext, useState } from 'react';
 import AppContext from '../context/appContext';
 import { MdClear, MdChevronRight, MdSearch } from "react-icons/md";
 
@@ -10,10 +10,13 @@ const Search = () => {
         setLocation
     } = useContext(AppContext);
 
-    const form = useRef('');
+    const [ input, setInput ] = useState("")
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        if(input) {
+            setLocation(input);
+        }
     }
 
     return (
@@ -30,24 +33,24 @@ const Search = () => {
                         <input className="input"
                         type="text" 
                         id="search"
-                        ref={form}
-                        onChange={(e) => setLocation(e.target.value)}
+                        value={input}
+                        onChange={(e) => setInput(e.target.value)}
                         placeholder="search location"/>
                     </div>
                     <button onClick={handleSubmit} className="h-full bg-button-search text-text-500 px-3" type="submit">Search</button>
                 </form>
                 
                 <div className="flex flex-col text-text-500">
-                    <button className="locationsearchbtn locationbutton">
+                    <button onClick={() => setLocation("London")} className="group locationsearchbtn locationbutton">
                         <p>London</p>
                         <MdChevronRight className="text-utils-500 opacity-0 group-hover:opacity-100" />
                     </button>
-                    <button className="locationsearchbtn locationbutton">
-                        <p>Barcelona</p>
+                    <button onClick={() => setLocation("Lagos")} className="group locationsearchbtn locationbutton">
+                        <p>Lagos</p>
                         <MdChevronRight className="text-utils-500 opacity-0 group-hover:opacity-100" />
                     </button>
-                    <button className="locationsearchbtn locationbutton">
-                        <p>Long beach</p>
+                    <button onClick={() => setLocation("Barcelona")} className="group locationsearchbtn locationbutton">
+                        <p>Barcelona</p>
                         <MdChevronRight className="text-utils-500 opacity-0 group-hover:opacity-100" />
                     </button>
                 </div>

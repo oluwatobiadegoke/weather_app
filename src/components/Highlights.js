@@ -9,10 +9,10 @@ const Highlights = () => {
     const { wind_speed, humidity, visibility, air_pressure, wind_direction, wind_direction_compass } = weather;
 
     return (
-        <div>
-            <h1 className="font-bold text-text-500 text-2xl mb-4">Today's Highlights</h1>
+        <div className="px-6 lg:px-0">
+            <h1 className="font-bold text-text-500 text-2xl mb-8">Today's Highlights</h1>
             <div>
-                <div className="grid grid-cols-2 gap-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                     <div className="bg-cards-500 flex flex-col items-center justify-around py-5">
                         <p className="text-text-500 text-sm">Wind status</p>
                         <h2 className="text-6xl text-text-500 font-bold">{wind_speed ? wind_speed.toFixed(0) : <Loader />}<span className="text-4xl font-medium">mph</span></h2>
@@ -44,7 +44,7 @@ const Highlights = () => {
                         </div>
                     </div>
                 </div>
-                <div className="grid grid-cols-2 gap-12 mt-7">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
                     <div className="bg-cards-500 flex flex-col items-center justify-around py-5">
                         <p className="text-text-500 text-sm mb-2">Visibility</p>
                         <h1 className="text-6xl text-text-500 font-bold mb-1">{visibility ? visibility.toFixed(1) : <Loader />}<span className="text-4xl font-medium">miles</span></h1>

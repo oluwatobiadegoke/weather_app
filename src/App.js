@@ -15,24 +15,24 @@ const App = () => {
   const { loading } = useContext(AppContext);
 
   return (
-    <main className="w-full h-screen flex font-body">
+    <main className="w-full h-screen flex flex-col font-body">
 
-      <section className="relative">
-        <Search/>
-        <Main />
-      </section>
+      {
+        loading ? <Loader /> : (
+          <>
+            <section className="static lg:relative">
+              <Search/>
+              <Main />
+            </section>
 
-      <section className="flex-1 bg-main-500 flex flex-col justify-between px-36 ml-96">
-        {
-          loading ? <Loader /> : (
-            <>
+            <section className="flex-1 bg-main-500 flex flex-col justify-between px-0 lg:px-14 xl:px-24 2xl:px-36 ml-0 lg:ml-96">
               <Forecasts />
               <Highlights />
-            </>
-          )
-        }
-        <Footer />
-      </section>
+              <Footer />
+            </section>
+          </>
+        )
+      }
 
     </main>
   );
